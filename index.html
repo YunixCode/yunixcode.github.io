@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yunix Code | Desenvolvimento de Software Sob Medida</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00C853",
+                        background: "#0A0A0A",
+                        surface: "#1A1A1A",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0A0A0A;
+            color: #FFFFFF;
+        }
+        .glass-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="font-body antialiased selection:bg-primary selection:text-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md dark:bg-[#0A0A0A]/80 border-b border-white/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+<div class="text-xl font-black tracking-tighter text-[#00C853] font-headline"><img alt="Yunix Code" class="h-[40px] w-auto" src="images/logo.png"/></div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#00C853] border-b-2 border-[#00C853] pb-1 font-medium transition-all duration-300" href="#inicio">Início</a>
+<a class="text-[#B0B0B0] hover:text-white transition-colors duration-300" href="#servicos">Serviços</a>
+<a class="text-[#B0B0B0] hover:text-white transition-colors duration-300" href="#portfolio">Portfólio</a>
+<a class="text-[#B0B0B0] hover:text-white transition-colors duration-300" href="#contato">Contato</a>
+</div>
+<a href="https://wa.me/5511925703507?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Yunix%20Code" target="_blank" class="bg-[#00C853] text-black px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-80 transition-opacity duration-300 no-underline">
+                Falar com Especialista
+            </a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-[100px]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 w-full grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-bold tracking-wider uppercase">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                        Software Development House
+                    </div>
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight">
+                        Desenvolvimento de <br/>
+<span class="text-primary">Software Sob Medida</span>
+</h1>
+<p class="text-xl text-[#B0B0B0] max-w-xl leading-relaxed">
+                        Transformamos suas ideias em soluções digitais de alta performance. Sites, aplicativos e sistemas personalizados para impulsionar o seu negócio.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-black px-8 py-4 rounded-lg font-bold hover:scale-[1.02] transition-transform flex items-center gap-2" href="#contato">
+                            Fale Conosco
+                            <span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="px-8 py-4 rounded-lg border border-white/20 font-bold hover:bg-white/5 transition-colors" href="#servicos">
+                            Nossos Serviços
+                        </a>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="aspect-square rounded-2xl overflow-hidden glass-card p-4 relative">
+<img alt="Coding interface" class="w-full h-full object-cover rounded-xl opacity-80" src="images/hero-code.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Serviços Section -->
+<section class="py-24 relative bg-[#0A0A0A]" id="servicos">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-3xl md:text-5xl font-headline font-extrabold mb-4">Nossos Serviços</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Service 1 -->
+<div class="group glass-card p-10 rounded-2xl hover:border-primary/30 transition-all duration-300">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="monitor">monitor</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 font-headline">Desenvolvimento Web</h3>
+<p class="text-[#B0B0B0] leading-relaxed mb-6">
+                            Sites institucionais, landing pages, e-commerce e sistemas web sob medida. Design responsivo, performance otimizada e as tecnologias mais modernas do mercado.
+                        </p>
+<div class="flex flex-wrap gap-3">
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">React</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Next.js</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Tailwind CSS</span>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group glass-card p-10 rounded-2xl hover:border-primary/30 transition-all duration-300">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="smartphone">smartphone</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 font-headline">Desenvolvimento de Aplicativos</h3>
+<p class="text-[#B0B0B0] leading-relaxed mb-6">
+                            Aplicativos mobile e plataformas SaaS completas. Do conceito ao lançamento, com foco em experiência do usuário e escalabilidade.
+                        </p>
+<div class="flex flex-wrap gap-3">
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Flutter</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Node.js</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Cloud Hosting</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfólio Section -->
+<section class="py-24 bg-[#0F0F0F]" id="portfolio">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-3xl md:text-5xl font-headline font-extrabold mb-4">Nosso Portfólio</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<div class="grid lg:grid-cols-12 gap-12 items-center bg-surface rounded-3xl overflow-hidden border border-white/5">
+<div class="lg:col-span-5 p-8 md:p-12 space-y-6">
+<div class="inline-block px-3 py-1 rounded bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
+                            Case de Sucesso
+                        </div>
+<h3 class="text-4xl font-extrabold font-headline">Valhalla Barber</h3>
+<p class="text-[#B0B0B0] text-lg leading-relaxed">
+                            Sistema SaaS completo para gestão de barbearias. Agendamento online, gestão de clientes, equipe e financeiro, integração com WhatsApp e inteligência artificial.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Next.js</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">NestJS</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">PostgreSQL</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">WhatsApp API</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">IA</span>
+</div>
+<div class="pt-6">
+<a class="text-primary font-bold flex items-center gap-2 group" href="https://valhallabarber.com.br" target="_blank">
+                                Conheça o Valhalla Barber
+                                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 h-full min-h-[400px] relative overflow-hidden bg-primary/5">
+<img alt="Valhalla Barber System" class="w-full h-full object-cover" src="images/valhalla-barber.png"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contato Section -->
+<section class="py-24 relative overflow-hidden" id="contato">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-headline font-extrabold mb-4">Entre em Contato</h2>
+<p class="text-[#B0B0B0] text-xl">Vamos conversar sobre o seu projeto</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-12">
+<!-- Contact Info -->
+<div class="lg:col-span-1 space-y-6">
+<div class="glass-card p-6 rounded-xl flex items-center gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="text-xs text-primary/60 font-bold uppercase tracking-widest">Email</p>
+<p class="font-medium">contato@yunixcode.com.br</p>
+</div>
+</div>
+<div class="glass-card p-6 rounded-xl flex items-center gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<div>
+<p class="text-xs text-primary/60 font-bold uppercase tracking-widest">Telefone</p>
+<p class="font-medium">(11) 92570-3507</p>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl space-y-6 border-primary/20">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</div>
+<div>
+<p class="text-xs text-primary/60 font-bold uppercase tracking-widest">WhatsApp</p>
+<p class="font-medium">(11) 92570-3507</p>
+</div>
+</div>
+<a href="https://wa.me/5511925703507?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Yunix%20Code" target="_blank" class="block w-full bg-primary text-black font-bold py-3 rounded-lg hover:opacity-90 transition-opacity text-center">
+                                Enviar mensagem
+                            </a>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="lg:col-span-2">
+<form class="glass-card p-8 md:p-12 rounded-2xl space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-white/70">Nome</label>
+<input class="w-full bg-black/50 border border-white/10 rounded-lg focus:border-primary focus:ring-1 focus:ring-primary text-white placeholder:text-white/20 p-4" placeholder="Seu nome" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-white/70">Email</label>
+<input class="w-full bg-black/50 border border-white/10 rounded-lg focus:border-primary focus:ring-1 focus:ring-primary text-white placeholder:text-white/20 p-4" placeholder="seu@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-white/70">Mensagem</label>
+<textarea class="w-full bg-black/50 border border-white/10 rounded-lg focus:border-primary focus:ring-1 focus:ring-primary text-white placeholder:text-white/20 p-4 resize-none" placeholder="Como podemos ajudar?" rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto bg-primary text-black px-12 py-4 rounded-lg font-bold text-lg hover:shadow-[0_0_20px_rgba(0,200,83,0.3)] transition-all" type="submit">
+                                Enviar
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-white/5 bg-[#0A0A0A]">
+<div class="max-w-7xl mx-auto px-6 space-y-12">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="space-y-4 max-w-sm">
+<div class="mb-4"><img alt="Yunix Code" class="h-[30px] w-auto" src="images/logo.png"/></div>
+<p class="text-sm font-light text-[#B0B0B0] leading-relaxed">
+                        Especialistas em transformar processos complexos em experiências digitais intuitivas e poderosas.
+                    </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div class="space-y-4">
+<h4 class="text-white text-xs font-bold uppercase tracking-widest">Links</h4>
+<ul class="space-y-2 text-sm font-light text-[#B0B0B0]">
+<li><a class="hover:text-[#00C853] transition-colors" href="#inicio">Início</a></li>
+<li><a class="hover:text-[#00C853] transition-colors" href="#servicos">Serviços</a></li>
+<li><a class="hover:text-[#00C853] transition-colors" href="#">Políticas</a></li>
+<li><a class="hover:text-[#00C853] transition-colors" href="#">Termos</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white text-xs font-bold uppercase tracking-widest">Social</h4>
+<ul class="space-y-2 text-sm font-light text-[#B0B0B0]">
+<li><a class="hover:text-[#00C853] transition-colors" href="#">LinkedIn</a></li>
+<li><a class="hover:text-[#00C853] transition-colors" href="#">GitHub</a></li>
+<li><a class="hover:text-[#00C853] transition-colors" href="#">Instagram</a></li>
+</ul>
+</div>
+<div class="space-y-4 col-span-2 sm:col-span-1">
+<h4 class="text-white text-xs font-bold uppercase tracking-widest">Contato</h4>
+<ul class="space-y-2 text-sm font-light text-[#B0B0B0]">
+<li>(11) 92570-3507</li>
+<li>contato@yunixcode.com.br</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-12 border-t border-[#1A1A1A] flex flex-col items-center text-center gap-6">
+<div class="space-y-1">
+<p class="text-sm font-light text-[#B0B0B0]">66.134.912 MARIO CESAR DA SILVA LIMA | CNPJ: 66.134.912/0001-64</p>
+<p class="text-sm font-light text-[#B0B0B0]">Rua 94, 205, Casa, Facel, Almeirim - PA, CEP 68.240-000</p>
+</div>
+<p class="text-sm font-light text-[#B0B0B0]/60">
+                    © 2026 Yunix Code. Todos os direitos reservados.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
