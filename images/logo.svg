@@ -16,6 +16,6 @@
     <circle cx="6" cy="10" r="2" fill="#00C853" opacity="0.6"/>
     <circle cx="34" cy="10" r="2" fill="#00C853" opacity="0.6"/>
   </g>
-  <!-- Text "Yunix Code" -->
-  <text x="46" y="27" font-family="Manrope, sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-0.5">Yunix Code</text>
+  <!-- Text "Yunix Code" in JetBrains Mono -->
+  <text x="46" y="27" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="20" fill="white" letter-spacing="-0.5">Yunix Code</text>
 </svg>

@@ -8,7 +8,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -30,7 +30,8 @@
                     fontFamily: {
                         "headline": ["Manrope", "sans-serif"],
                         "body": ["Inter", "sans-serif"],
-                        "label": ["Inter", "sans-serif"]
+                        "label": ["Inter", "sans-serif"],
+                        "code": ["JetBrains Mono", "monospace"]
                     }
                 },
             },
@@ -39,6 +40,9 @@
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        html, body {
+            overflow-x: hidden;
         }
         body {
             background-color: #0A0A0A;
@@ -103,7 +107,20 @@
 <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md dark:bg-[#0A0A0A]/80 border-b border-white/10">
 <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
 <a href="#inicio" class="flex items-center gap-2">
-<img alt="Yunix Code" class="h-[36px] w-auto" src="images/logo.svg"/>
+<svg class="h-[36px] w-auto" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="4" x2="20" y2="18" stroke="#00C853" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="28" y1="4" x2="20" y2="18" stroke="#00C853" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="18" x2="20" y2="36" stroke="#00C853" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="6" y1="10" x2="12" y2="4" stroke="#00C853" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="34" y1="10" x2="28" y2="4" stroke="#00C853" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="12" cy="4" r="3" fill="#00C853"/>
+    <circle cx="28" cy="4" r="3" fill="#00C853"/>
+    <circle cx="20" cy="18" r="3.5" fill="#00C853"/>
+    <circle cx="20" cy="36" r="3" fill="#00C853"/>
+    <circle cx="6" cy="10" r="2" fill="#00C853" opacity="0.6"/>
+    <circle cx="34" cy="10" r="2" fill="#00C853" opacity="0.6"/>
+</svg>
+<span class="font-code font-bold text-lg text-white hidden sm:inline">Yunix Code</span>
 </a>
 <div class="hidden md:flex items-center gap-8">
 <a class="text-[#00C853] border-b-2 border-[#00C853] pb-1 font-medium transition-all duration-300" href="#inicio">Início</a>
@@ -111,8 +128,9 @@
 <a class="text-[#B0B0B0] hover:text-white transition-colors duration-300" href="#portfolio">Portfólio</a>
 <a class="text-[#B0B0B0] hover:text-white transition-colors duration-300" href="#contato">Contato</a>
 </div>
-<a href="https://wa.me/5511925703507?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Yunix%20Code" target="_blank" class="bg-[#00C853] text-black px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-80 transition-opacity duration-300 no-underline">
-                Falar com Especialista
+<a href="https://wa.me/5511925703507?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Yunix%20Code" target="_blank" class="bg-[#00C853] text-black px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold text-xs md:text-sm hover:opacity-80 transition-opacity duration-300 no-underline whitespace-nowrap">
+                <span class="hidden sm:inline">Falar com Especialista</span>
+                <span class="sm:hidden">Contato</span>
             </a>
 </div>
 </nav>
@@ -132,19 +150,19 @@
 </span>
                         Software Development House
                     </div>
-<h1 class="text-5xl md:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight">
+<h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight">
                         Desenvolvimento de <br/>
 <span class="text-primary">Software Sob Medida</span>
 </h1>
-<p class="text-xl text-[#B0B0B0] max-w-xl leading-relaxed">
+<p class="text-base sm:text-xl text-[#B0B0B0] max-w-xl leading-relaxed">
                         Transformamos suas ideias em soluções digitais de alta performance. Sites, aplicativos e sistemas personalizados para impulsionar o seu negócio.
                     </p>
 <div class="flex flex-wrap gap-4">
-<a class="bg-primary text-black px-8 py-4 rounded-lg font-bold hover:scale-[1.02] transition-transform flex items-center gap-2" href="#contato">
+<a class="bg-primary text-black px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-bold text-sm sm:text-base hover:scale-[1.02] transition-transform flex items-center gap-2" href="#contato">
                             Fale Conosco
                             <span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
 </a>
-<a class="px-8 py-4 rounded-lg border border-white/20 font-bold hover:bg-white/5 transition-colors" href="#servicos">
+<a class="px-6 py-3 sm:px-8 sm:py-4 rounded-lg border border-white/20 font-bold text-sm sm:text-base hover:bg-white/5 transition-colors" href="#servicos">
                             Nossos Serviços
                         </a>
 </div>
@@ -167,7 +185,7 @@
 </div>
 <div class="grid md:grid-cols-2 gap-8">
 <!-- Service 1 -->
-<div class="group glass-card p-10 rounded-2xl hover:border-primary/30 transition-all duration-300">
+<div class="group glass-card p-6 sm:p-10 rounded-2xl hover:border-primary/30 transition-all duration-300">
 <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
 <span class="material-symbols-outlined text-3xl text-primary" data-icon="monitor">monitor</span>
 </div>
@@ -194,7 +212,7 @@
 </div>
 </div>
 <!-- Service 2 -->
-<div class="group glass-card p-10 rounded-2xl hover:border-primary/30 transition-all duration-300">
+<div class="group glass-card p-6 sm:p-10 rounded-2xl hover:border-primary/30 transition-all duration-300">
 <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
 <span class="material-symbols-outlined text-3xl text-primary" data-icon="smartphone">smartphone</span>
 </div>
@@ -230,12 +248,12 @@
 <h2 class="text-3xl md:text-5xl font-headline font-extrabold mb-4">Nosso Portfólio</h2>
 <div class="h-1 w-20 bg-primary"></div>
 </div>
-<div class="grid lg:grid-cols-12 gap-12 items-center bg-surface rounded-3xl overflow-hidden border border-white/5">
-<div class="lg:col-span-5 p-8 md:p-12 space-y-6">
+<div class="grid lg:grid-cols-12 gap-0 lg:gap-12 items-center bg-surface rounded-3xl overflow-hidden border border-white/5">
+<div class="lg:col-span-5 p-6 sm:p-8 md:p-12 space-y-6">
 <div class="inline-block px-3 py-1 rounded bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
                             Case de Sucesso
                         </div>
-<h3 class="text-4xl font-extrabold font-headline">Valhalla Barber</h3>
+<h3 class="text-2xl sm:text-4xl font-extrabold font-headline">Valhalla Barber</h3>
 <p class="text-[#B0B0B0] text-lg leading-relaxed">
                             Sistema SaaS completo para gestão de barbearias. Agendamento online, gestão de clientes, equipe e financeiro, integração com WhatsApp e inteligência artificial.
                         </p>
@@ -262,7 +280,7 @@
 </a>
 </div>
 </div>
-<div class="lg:col-span-7 h-full min-h-[400px] relative overflow-hidden bg-surface">
+<div class="lg:col-span-7 h-full min-h-[200px] sm:min-h-[400px] relative overflow-hidden bg-surface">
 <img alt="Dashboard SaaS - Valhalla Barber" class="w-full h-full object-cover opacity-90" src="images/valhalla-barber.png"/>
 <div class="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-surface/50"></div>
 </div>
@@ -274,7 +292,7 @@
 <div class="max-w-7xl mx-auto px-6 relative z-10">
 <div class="text-center mb-16">
 <h2 class="text-3xl md:text-5xl font-headline font-extrabold mb-4">Entre em Contato</h2>
-<p class="text-[#B0B0B0] text-xl">Vamos conversar sobre o seu projeto</p>
+<p class="text-[#B0B0B0] text-base sm:text-xl">Vamos conversar sobre o seu projeto</p>
 </div>
 <div class="grid lg:grid-cols-3 gap-12">
 <!-- Contact Info -->
@@ -344,12 +362,27 @@
 <div class="max-w-7xl mx-auto px-6 space-y-12">
 <div class="flex flex-col md:flex-row justify-between items-start gap-12">
 <div class="space-y-4 max-w-sm">
-<div class="mb-4"><img alt="Yunix Code" class="h-[28px] w-auto" src="images/logo.svg"/></div>
+<div class="mb-4 flex items-center gap-2">
+<svg class="h-[28px] w-auto" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="12" y1="4" x2="20" y2="18" stroke="#00C853" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="28" y1="4" x2="20" y2="18" stroke="#00C853" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="18" x2="20" y2="36" stroke="#00C853" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="6" y1="10" x2="12" y2="4" stroke="#00C853" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="34" y1="10" x2="28" y2="4" stroke="#00C853" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="12" cy="4" r="3" fill="#00C853"/>
+    <circle cx="28" cy="4" r="3" fill="#00C853"/>
+    <circle cx="20" cy="18" r="3.5" fill="#00C853"/>
+    <circle cx="20" cy="36" r="3" fill="#00C853"/>
+    <circle cx="6" cy="10" r="2" fill="#00C853" opacity="0.6"/>
+    <circle cx="34" cy="10" r="2" fill="#00C853" opacity="0.6"/>
+</svg>
+<span class="font-code font-bold text-base text-white">Yunix Code</span>
+</div>
 <p class="text-sm font-light text-[#B0B0B0] leading-relaxed">
                         Especialistas em transformar processos complexos em experiências digitais intuitivas e poderosas.
                     </p>
 </div>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12">
 <div class="space-y-4">
 <h4 class="text-white text-xs font-bold uppercase tracking-widest">Links</h4>
 <ul class="space-y-2 text-sm font-light text-[#B0B0B0]">
@@ -378,8 +411,8 @@
 </div>
 <div class="pt-12 border-t border-[#1A1A1A] flex flex-col items-center text-center gap-6">
 <div class="space-y-1">
-<p class="text-sm font-light text-[#B0B0B0]">66.134.912 MARIO CESAR DA SILVA LIMA | CNPJ: 66.134.912/0001-64</p>
-<p class="text-sm font-light text-[#B0B0B0]">Rua 94, 205, Casa, Facel, Almeirim - PA, CEP 68.240-000</p>
+<p class="text-xs sm:text-sm font-light text-[#B0B0B0]">66.134.912 MARIO CESAR DA SILVA LIMA | CNPJ: 66.134.912/0001-64</p>
+<p class="text-xs sm:text-sm font-light text-[#B0B0B0]">Rua 94, 205, Casa, Facel, Almeirim - PA, CEP 68.240-000</p>
 </div>
 <p class="text-sm font-light text-[#B0B0B0]/60">
                     © 2026 Yunix Code. Todos os direitos reservados.
