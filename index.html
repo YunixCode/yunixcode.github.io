@@ -53,7 +53,9 @@
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md dark:bg-[#0A0A0A]/80 border-b border-white/10">
 <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-<div class="text-xl font-black tracking-tighter text-[#00C853] font-headline"><img alt="Yunix Code" class="h-[40px] w-auto" src="images/logo.png"/></div>
+<a href="#inicio" class="flex items-center gap-2">
+<img alt="Yunix Code" class="h-[36px] w-auto" src="images/logo.svg"/>
+</a>
 <div class="hidden md:flex items-center gap-8">
 <a class="text-[#00C853] border-b-2 border-[#00C853] pb-1 font-medium transition-all duration-300" href="#inicio">Início</a>
 <a class="text-[#B0B0B0] hover:text-white transition-colors duration-300" href="#servicos">Serviços</a>
@@ -126,7 +128,10 @@
 <div class="flex flex-wrap gap-3">
 <span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">React</span>
 <span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Next.js</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">TypeScript</span>
 <span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Tailwind CSS</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">NestJS</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">PostgreSQL</span>
 </div>
 </div>
 <!-- Service 2 -->
@@ -139,9 +144,12 @@
                             Aplicativos mobile e plataformas SaaS completas. Do conceito ao lançamento, com foco em experiência do usuário e escalabilidade.
                         </p>
 <div class="flex flex-wrap gap-3">
-<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Flutter</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">React</span>
 <span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Node.js</span>
-<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Cloud Hosting</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Prisma</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Stripe</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Socket.IO</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-primary/60">Docker</span>
 </div>
 </div>
 </div>
@@ -164,11 +172,20 @@
                             Sistema SaaS completo para gestão de barbearias. Agendamento online, gestão de clientes, equipe e financeiro, integração com WhatsApp e inteligência artificial.
                         </p>
 <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Next.js</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Next.js 16</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">React 19</span>
 <span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">NestJS</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">TypeScript</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Prisma</span>
 <span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">PostgreSQL</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Redis</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Tailwind CSS</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Stripe</span>
 <span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">WhatsApp API</span>
-<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">IA</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">OpenAI</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Socket.IO</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">Docker</span>
+<span class="px-3 py-1 bg-black rounded-md text-xs font-medium text-white/70">GitHub Actions</span>
 </div>
 <div class="pt-6">
 <a class="text-primary font-bold flex items-center gap-2 group" href="https://valhallabarber.com.br" target="_blank">
@@ -177,9 +194,9 @@
 </a>
 </div>
 </div>
-<div class="lg:col-span-7 h-full min-h-[400px] relative overflow-hidden bg-primary/5">
-<img alt="Valhalla Barber System" class="w-full h-full object-cover" src="images/valhalla-barber.png"/>
-<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<div class="lg:col-span-7 h-full min-h-[400px] relative overflow-hidden bg-surface">
+<img alt="Dashboard SaaS - Valhalla Barber" class="w-full h-full object-cover opacity-90" src="images/valhalla-barber.png"/>
+<div class="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-surface/50"></div>
 </div>
 </div>
 </div>
@@ -258,7 +275,7 @@
 <div class="max-w-7xl mx-auto px-6 space-y-12">
 <div class="flex flex-col md:flex-row justify-between items-start gap-12">
 <div class="space-y-4 max-w-sm">
-<div class="mb-4"><img alt="Yunix Code" class="h-[30px] w-auto" src="images/logo.png"/></div>
+<div class="mb-4"><img alt="Yunix Code" class="h-[28px] w-auto" src="images/logo.svg"/></div>
 <p class="text-sm font-light text-[#B0B0B0] leading-relaxed">
                         Especialistas em transformar processos complexos em experiências digitais intuitivas e poderosas.
                     </p>
